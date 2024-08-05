@@ -1,0 +1,50 @@
+.service-all{
+    background-image: url('../../Resourses/background2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height:76.3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    
+
+}
+
+.Service-Details-card {
+    background: rgb(207, 207, 207, 0.9); 
+    color: #000;
+    padding: 2rem;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .Service-Details-card h2 {
+    margin-top: 0;
+    
+  }
+
+  .Service-Details-card p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .Service-image-card {
+    background: rgba(69, 34, 60, 0.5); 
+    color: #000;
+    padding: 2rem;
+    width: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .service-images img{
+    height: 120px;
+    width: auto;
+    margin: 0 15px;
+  }

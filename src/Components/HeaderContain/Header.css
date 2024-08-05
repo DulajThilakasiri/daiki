@@ -1,0 +1,84 @@
+.HeaderContainer {
+  position: relative;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Resourses/sakura.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.Logo-Container {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 2;
+}
+
+.logo {
+  height: 60px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo-clicked {
+  animation: click-animation 0.2s ease-in-out;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navbar {
+  margin-left: auto;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #929292;
+}
+
+nav ul li .active {
+  background-color: #e05897;
+}
